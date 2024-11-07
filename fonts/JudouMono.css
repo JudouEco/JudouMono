@@ -1,0 +1,252 @@
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtraLight.woff2') format('woff2'), url('TTF/JudouMono-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedExtraLight.woff2') format('woff2'), url('TTF/JudouMono-ExtendedExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtraLightItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedExtraLightItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Light.woff2') format('woff2'), url('TTF/JudouMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedLight.woff2') format('woff2'), url('TTF/JudouMono-ExtendedLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-LightItalic.woff2') format('woff2'), url('TTF/JudouMono-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedLightItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 350;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-SemiLight.woff2') format('woff2'), url('TTF/JudouMono-SemiLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 350;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedSemiLight.woff2') format('woff2'), url('TTF/JudouMono-ExtendedSemiLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 350;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-SemiLightItalic.woff2') format('woff2'), url('TTF/JudouMono-SemiLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 350;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedSemiLightItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedSemiLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Regular.woff2') format('woff2'), url('TTF/JudouMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Extended.woff2') format('woff2'), url('TTF/JudouMono-Extended.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-Italic.woff2') format('woff2'), url('TTF/JudouMono-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Medium.woff2') format('woff2'), url('TTF/JudouMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedMedium.woff2') format('woff2'), url('TTF/JudouMono-ExtendedMedium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-MediumItalic.woff2') format('woff2'), url('TTF/JudouMono-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedMediumItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedMediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Bold.woff2') format('woff2'), url('TTF/JudouMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedBold.woff2') format('woff2'), url('TTF/JudouMono-ExtendedBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-BoldItalic.woff2') format('woff2'), url('TTF/JudouMono-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedBoldItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-Heavy.woff2') format('woff2'), url('TTF/JudouMono-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('WOFF2/JudouMono-ExtendedHeavy.woff2') format('woff2'), url('TTF/JudouMono-ExtendedHeavy.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-HeavyItalic.woff2') format('woff2'), url('TTF/JudouMono-HeavyItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Judou Mono Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url('WOFF2/JudouMono-ExtendedHeavyItalic.woff2') format('woff2'), url('TTF/JudouMono-ExtendedHeavyItalic.ttf') format('truetype');
+}
