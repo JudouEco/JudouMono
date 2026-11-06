@@ -1,5 +1,5 @@
 [collectPlans.JudouMono]
-from = ["JudouMono", "JudouMonoFCM"]
+from = ["JudouMono", "JudouMonoFCM", "JudouMonoUD", "JudouMonoUDFCM"]
 
 [buildPlans.JudouMono]
 family = "Judou Mono"
@@ -10,6 +10,7 @@ exportGlyphNames = true
 buildTextureFeature = true
 
 [buildPlans.JudouMono.variants.design]
+one = "no-base-flat-top-serif"
 three = "flat-top-serifless"
 five = "oblique-flat-serifless"
 seven = "straight-serifed"
@@ -25,12 +26,18 @@ l = "serifed-flat-tailed"
 r = "hookless-serifless"
 t = "flat-hook-short-neck"
 y = "straight-turn-serifless"
-long-s = "flat-hook-serifless"
+capital-eszet = "corner-serifless"
+long-s = "flat-hook-middle-serifed-xh"
 eszet = "traditional-flat-hook-serifless"
 lower-eth = "straight-bar"
+lower-gamma = "straight"
+lower-delta = "flat-top"
+lower-zeta = "diagonal-tail-sharp-corner"
 lower-iota = "flat-tailed"
 lower-mu = "toothed-serifless"
+lower-xi = "rounded-diagonal-tail-sharp-corner"
 lower-pi = "tailless"
+lower-final-sigma = "diagonal-tail-sharp-corner"
 lower-tau = "flat-tailed"
 partial-derivative = "straight-bar"
 cyrl-em = "hanging-serifless"
@@ -48,18 +55,20 @@ lig-equal-chain = "without-notch"
 [buildPlans.JudouMono.variants.italic]
 a = "single-storey-serifless"
 d = "toothed-serifless"
-f = "flat-hook-tailed"
-i = "tailed-serifed"
+f = "flat-hook-extended-crossbar-at-x-height"
 j = "serifed"
 l = "tailed-serifed"
 t = "bent-hook-short-neck"
 u = "toothed-serifless"
 y = "cursive-serifless"
-long-s = "flat-hook-tailed"
-eszet = "traditional-flat-hook-tailed-serifless"
+long-s = "flat-hook-descending-middle-serifed-xh"
+eszet = "traditional-flat-hook-descending-serifless"
 lower-iota = "tailed"
 lower-tau = "tailed"
+cyrl-a = "single-storey-serifless"
 cyrl-u = "cursive-serifless"
+cyrl-yeri = "cursive"
+cyrl-yery = "cursive"
 number-sign = "upright"
 micro-sign = "toothed-serifless"
 
@@ -114,15 +123,19 @@ css = "italic"
 ranges = [[119808,119963],[120224,120791],[120802,120831]]
 
 [buildPlans.JudouMono.metricOverride]
-sb = 'default_sb * 0.9'
+sb = 'default_sb * 0.9 - 2'
 xHeight = 530
+archDepth = 'default_archDepth + 20'
+smallArchDepth = 'default_smallArchDepth + 20'
 
 [buildPlans.JudouMono.namingOverride]
-copyright = 'Copyright 2017-2025 JudouEco. Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
+copyright = 'Copyright 2017-2026 JudouEco. Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
 manufacturer = 'JudouEco'
+vendorIdTag = 'JuTy'
 urlVendor = 'https://github.com/JudouEco/'
 description = 'A monospace typeface based on Iosevka.'
-version = '2.0.0'
+version = '3.0.0'
+sampleText = 'printf("Hello, World!");'
 
 [buildPlans.JudouMonoFCM]
 family = "Judou Mono FCM"
@@ -132,30 +145,79 @@ noCvSs = true
 exportGlyphNames = true
 buildTextureFeature = true
 
-[buildPlans.JudouMonoFCM.variants.design]
+weights.inherits = "buildPlans.JudouMono"
+widths.inherits = "buildPlans.JudouMono"
+slopes.inherits = "buildPlans.JudouMono"
+variants.inherits = "buildPlans.JudouMono"
+
+[buildPlans.JudouMonoFCM.subset.exclude]
+ranges = [[119808,119963],[120224,120791],[120802,120831]]
+
+[buildPlans.JudouMonoFCM.metricOverride]
+sb = 'default_sb * 0.9 - 2'
+xHeight = 530
+archDepth = 'default_archDepth + 20'
+smallArchDepth = 'default_smallArchDepth + 20'
+
+[buildPlans.JudouMonoFCM.namingOverride]
+copyright = 'Copyright 2017-2026 JudouEco. Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
+manufacturer = 'JudouEco'
+vendorIdTag = 'JuTy'
+urlVendor = 'https://github.com/JudouEco/'
+description = 'A monospace typeface based on Iosevka.'
+version = '3.0.0'
+sampleText = 'printf("Hello, World!");'
+
+[buildPlans.JudouMonoUD]
+family = "Judou Mono UD"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+buildTextureFeature = true
+
+weights.inherits = "buildPlans.JudouMono"
+widths.inherits = "buildPlans.JudouMono"
+slopes.inherits = "buildPlans.JudouMono"
+
+[buildPlans.JudouMonoUD.variants.design]
+one = "no-base-flat-top-serif"
 three = "flat-top-serifless"
 five = "oblique-flat-serifless"
+six = "open-contour"
 seven = "straight-serifed"
 eight = "two-circles"
 zero = "slashed-split"
+capital-b = "more-asymmetric-serifless"
 capital-g = "toothless-rounded-serifless-hooked"
 capital-j = "serifless"
 capital-q = "crossing-baseline"
+a = "double-storey-tailed"
+b = "toothless-corner-serifless"
+d = "tailed-serifless"
 f = "flat-hook-serifless-crossbar-at-x-height"
 i = "hooky"
 j = "flat-hook-serifed"
 l = "serifed-flat-tailed"
+q = "earless-corner-tailed-serifless"
 r = "hookless-serifless"
 t = "flat-hook-short-neck"
+u = "tailed-serifless"
 y = "straight-turn-serifless"
-long-s = "flat-hook-serifless"
+capital-eszet = "corner-serifless"
+long-s = "flat-hook-middle-serifed-xh"
 eszet = "traditional-flat-hook-serifless"
 lower-eth = "straight-bar"
+lower-gamma = "straight"
+lower-delta = "flat-top"
+lower-zeta = "diagonal-tail-sharp-corner"
 lower-iota = "flat-tailed"
-lower-mu = "toothed-serifless"
+lower-xi = "rounded-diagonal-tail-sharp-corner"
 lower-pi = "tailless"
+lower-final-sigma = "diagonal-tail-sharp-corner"
 lower-tau = "flat-tailed"
 partial-derivative = "straight-bar"
+cyrl-a = "double-storey-tailed"
 cyrl-em = "hanging-serifless"
 cyrl-u = "straight-turn-serifless"
 asterisk = "turn-hex-low"
@@ -168,81 +230,69 @@ cent = "open"
 lig-ltgteq = "slanted"
 lig-equal-chain = "without-notch"
 
-[buildPlans.JudouMonoFCM.variants.italic]
-a = "single-storey-serifless"
-d = "toothed-serifless"
-f = "flat-hook-tailed"
-i = "tailed-serifed"
+[buildPlans.JudouMonoUD.variants.italic]
+a = "single-storey-tailed"
+f = "flat-hook-extended-crossbar-at-x-height"
 j = "serifed"
 l = "tailed-serifed"
 t = "bent-hook-short-neck"
-u = "toothed-serifless"
 y = "cursive-serifless"
-long-s = "flat-hook-tailed"
-eszet = "traditional-flat-hook-tailed-serifless"
+long-s = "flat-hook-descending-middle-serifed-xh"
+eszet = "traditional-flat-hook-descending-serifless"
 lower-iota = "tailed"
 lower-tau = "tailed"
+cyrl-a = "single-storey-tailed"
 cyrl-u = "cursive-serifless"
+cyrl-yeri = "cursive"
+cyrl-yery = "cursive"
 number-sign = "upright"
 micro-sign = "toothed-serifless"
 
-[buildPlans.JudouMonoFCM.weights.ExtraLight]
-shape = 150
-menu = 200
-css = 200
+[buildPlans.JudouMonoUD.subset.exclude]
+ranges = [[119808,119963],[120224,120791],[120802,120831]]
 
-[buildPlans.JudouMonoFCM.weights.Light]
-shape = 250
-menu = 300
-css = 300
-
-[buildPlans.JudouMonoFCM.weights.SemiLight]
-shape = 350
-menu = 350
-css = 350
-
-[buildPlans.JudouMonoFCM.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.JudouMonoFCM.weights.Medium]
-shape = 550
-menu = 500
-css = 500
-
-[buildPlans.JudouMonoFCM.weights.Bold]
-shape = 750
-menu = 700
-css = 700
-
-[buildPlans.JudouMonoFCM.weights.Heavy]
-shape = 900
-menu = 900
-css = 900
-
-[buildPlans.JudouMonoFCM.slopes.Upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.JudouMonoFCM.slopes.Italic]
-angle = 8
-shape = "italic"
-menu = "italic"
-css = "italic"
-
-[buildPlans.JudouMonoFCM.subset.exclude]
-ranges = [[119808,119963],[120224,120791],[120802,120831],[129232,129240]]
-
-[buildPlans.JudouMonoFCM.metricOverride]
-sb = 'default_sb * 0.9'
+[buildPlans.JudouMonoUD.metricOverride]
+sb = 'default_sb * 0.9 - 2'
 xHeight = 530
+archDepth = 'default_archDepth + 20'
+smallArchDepth = 'default_smallArchDepth + 20'
 
-[buildPlans.JudouMonoFCM.namingOverride]
-copyright = 'Copyright 2017-2025 JudouEco. Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
+[buildPlans.JudouMonoUD.namingOverride]
+copyright = 'Copyright 2017-2026 JudouEco. Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
 manufacturer = 'JudouEco'
+vendorIdTag = 'JuTy'
 urlVendor = 'https://github.com/JudouEco/'
 description = 'A monospace typeface based on Iosevka.'
-version = '2.0.0'
+version = '3.0.0'
+sampleText = 'printf("Hello, World!");'
+
+[buildPlans.JudouMonoUDFCM]
+family = "Judou Mono UD FCM"
+spacing = "fontconfig-mono"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+buildTextureFeature = true
+
+weights.inherits = "buildPlans.JudouMono"
+widths.inherits = "buildPlans.JudouMono"
+slopes.inherits = "buildPlans.JudouMono"
+variants.inherits = "buildPlans.JudouMonoUD"
+
+[buildPlans.JudouMonoUDFCM.subset.exclude]
+ranges = [[119808,119963],[120224,120791],[120802,120831]]
+
+[buildPlans.JudouMonoUDFCM.metricOverride]
+sb = 'default_sb * 0.9 - 2'
+xHeight = 530
+archDepth = 'default_archDepth + 20'
+smallArchDepth = 'default_smallArchDepth + 20'
+
+[buildPlans.JudouMonoUDFCM.namingOverride]
+copyright = 'Copyright 2017-2026 JudouEco. Copyright 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).'
+manufacturer = 'JudouEco'
+vendorIdTag = 'JuTy'
+urlVendor = 'https://github.com/JudouEco/'
+description = 'A monospace typeface based on Iosevka.'
+version = '3.0.0'
+sampleText = 'printf("Hello, World!");'
